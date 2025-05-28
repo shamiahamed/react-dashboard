@@ -6,45 +6,33 @@ A responsive, modular healthcare dashboard built with React and Bootstrap, desig
 This project follows a component-based architecture for clarity and scalability:
 
 📌 Layout Structure
+The app follows a modular component structure:
+
 App Component
-The root layout managing Header, Sidebar, and DashboardMainContent using Flexbox/Grid.
+Root component that manages the layout using Flexbox/Grid for Header, Sidebar, and DashboardMainContent.
 
 Header Component
-Displays:
-
-App Logo/Title (“Healthcare.”)
-
-Search bar (UI only)
-
-Notification icon
-
-Static user profile (avatar + name)
-
-“+ Add” button (display-only)
+Displays the app title/logo ("Healthcare."), search bar, notification icon, static user avatar with name, and a static “+ Add” button.
 
 Sidebar Component
-Vertical navigation with:
-
-"General" heading
-
-Static links: Dashboard, History, Calendar, Appointments, Statistics, Tests, Chat, Support, Settings
+Vertical navigation with a "General" heading and static links for Dashboard, History, Calendar, Appointments, Statistics, Tests, Chat, Support, and Settings.
 
 DashboardMainContent Component
-Hosts all sub-sections of the main content area:
+Main container for all dashboard sub-sections:
 
-DashboardOverview – High-level summary
+DashboardOverview: Intro summary area.
 
-AnatomySection – Human body image with labeled indicators like “Healthy Heart”, “Lungs”, each color-coded (green/red)
+AnatomySection: Static human anatomy image with labeled indicators (e.g., “Healthy Heart”, “Lungs”) in color-coded status (green/red).
 
-HealthStatusCards – Cards for “Lungs”, “Teeth”, and “Bone” showing health status and mock dates
+HealthStatusCards: Cards for organs like "Lungs", "Teeth", and "Bone" showing static health info and mock dates.
 
-CalendarView – Static calendar (e.g., October 2021) with mock times (“09:00”, “11:00”, etc.) and appointment cards (“Dentist”, “Physiotherapy”)
+CalendarView: Static monthly calendar (e.g., October 2021) with mock appointment times on specific days and appointment details below ("Dentist", "Physiotherapy Appointment").
 
-UpcomingSchedule – “The Upcoming Schedule” section organized by days (e.g., “On Thursday”)
+UpcomingSchedule: Section titled “The Upcoming Schedule” organized by day (e.g., “On Thursday”) and displaying multiple appointments using:
 
-Uses the SimpleAppointmentCard component for each appointment
+SimpleAppointmentCard: Reusable card component for upcoming appointments with static title, time, and an icon.
 
-ActivityFeed – Displays "3 appointments on this week" with a basic bar chart built using static CSS
+ActivityFeed: Static "Activity" chart with text like "3 appointments on this week" and a simple bar chart created using CSS (no dynamic charting).
 
 🛠 Tech Stack
 React.js
