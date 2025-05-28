@@ -1,11 +1,14 @@
 # React Project
 🏥 Healthcare Dashboard (React + Bootstrap)
+
 A responsive, modular healthcare dashboard built with React and Bootstrap, designed to showcase a clean and professional UI with reusable components.
 
 🚀 Features
+
 This project follows a component-based architecture for clarity and scalability:
 
 📌 Layout Structure
+
 The app follows a modular component structure:
 
 App Component
@@ -44,4 +47,5 @@ CSS Flex/Grid
 100% Static UI (No API/backend integration)
 
 📁 File Structure
+
 All UI components are modular, logically separated, and styled for responsiveness — perfect for extending into a full healthcare app.
